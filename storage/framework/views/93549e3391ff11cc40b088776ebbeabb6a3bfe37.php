@@ -1,0 +1,117 @@
+<?php $attributes = $attributes->exceptProps([
+    'p' => [
+        [
+            [
+                'col' => 4,
+                'type' => 'search',
+                'label' => 'Username',
+                'name' => 'username',
+                'placeholder' => 'Enter username',
+                'datalist' => $_SERVER,
+                'constraint' => 'required', // autofocus|required|readonly|disabled|multiple
+            ],
+            [
+                'col' => 4,
+                'type' => 'file',
+                'label' => 'Passport',
+                'name' => 'photo',
+                'accept' => 'image/*',
+                'constraint' => 'required multiple',
+            ],
+            [
+                'col' => 4,
+                'type' => 'select',
+                'label' => 'Gender',
+                'name' => 'sex',
+                'value' => 'REQUEST_METHOD',
+                'options' => $_SERVER,
+                'constraint' => 'required',
+            ],
+        ],
+        [
+            [
+                'type' => 'textarea',
+                'label' => 'Address',
+                'name' => 'address',
+                'placeholder' => 'Home address',
+                'constraint' => 'required',
+            ],
+        ],
+    ],
+]); ?>
+<?php foreach (array_filter(([
+    'p' => [
+        [
+            [
+                'col' => 4,
+                'type' => 'search',
+                'label' => 'Username',
+                'name' => 'username',
+                'placeholder' => 'Enter username',
+                'datalist' => $_SERVER,
+                'constraint' => 'required', // autofocus|required|readonly|disabled|multiple
+            ],
+            [
+                'col' => 4,
+                'type' => 'file',
+                'label' => 'Passport',
+                'name' => 'photo',
+                'accept' => 'image/*',
+                'constraint' => 'required multiple',
+            ],
+            [
+                'col' => 4,
+                'type' => 'select',
+                'label' => 'Gender',
+                'name' => 'sex',
+                'value' => 'REQUEST_METHOD',
+                'options' => $_SERVER,
+                'constraint' => 'required',
+            ],
+        ],
+        [
+            [
+                'type' => 'textarea',
+                'label' => 'Address',
+                'name' => 'address',
+                'placeholder' => 'Home address',
+                'constraint' => 'required',
+            ],
+        ],
+    ],
+]), 'is_string', ARRAY_FILTER_USE_KEY) as $__key => $__value) {
+    $$__key = $$__key ?? $__value;
+} ?>
+<?php $__defined_vars = get_defined_vars(); ?>
+<?php foreach ($attributes as $__key => $__value) {
+    if (array_key_exists($__key, $__defined_vars)) unset($$__key);
+} ?>
+<?php unset($__defined_vars); ?>
+
+<?php $__env->startPush('styles'); ?>
+    <link href="<?php echo e(asset('assets/minible/libs/select2/css/select2.min.css')); ?>" rel="stylesheet" type="text/css" />
+<?php $__env->stopPush(); ?>
+
+<?php $__env->startPush('scripts_'); ?>
+    <script src="<?php echo e(asset('assets/minible/libs/select2/js/select2.min.js')); ?>"></script>
+<?php $__env->stopPush(); ?>
+
+<?php $__currentLoopData = $p; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $items): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+    <div class="row">
+        <?php $__currentLoopData = $items; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
+<?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.form.control','data' => ['p' => $item]]); ?>
+<?php $component->withName('form.control'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes(['p' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute($item)]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>
+<?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>
+<?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
+<?php endif; ?>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+    </div>
+<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+<?php /**PATH C:\xampp\htdocs\vudo\resources\views/components/form/items.blade.php ENDPATH**/ ?>
