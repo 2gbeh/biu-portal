@@ -1,0 +1,40 @@
+{
+  "name": "Crystal Football",
+  "short_name": "Crystal FBC",
+  "authors": "Crystal Football, Inc.",
+  "description": "Best Odds with 100% Welcome Bonus",
+  "categories": [
+    "crystal football",
+    "crystal fbc",
+    "betting site",
+    "best odds",
+    "predict and win"
+  ],
+  "background_color": "#ffffff",
+  "theme_color": "#ab1a24",
+  "start_url": "index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/msapplication-tile-image.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/mask-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "683x683"
+    }
+  ],
+  "shortcuts": [],
+  "screenshots": []
+}

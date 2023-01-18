@@ -1,0 +1,47 @@
+{
+  "name": "SvelteKit",
+  "short_name": "Svelte",
+  "authors": "Rich Harris",
+  "description": "The Fastest Way to Build Svelte Apps",
+  "categories": [
+    "svelte",
+    "svelte js",
+    "svelte kit",
+    "javascript",
+    "typescript",
+    "node js",
+    "framework",
+    "spa",
+    "ssr",
+    "web",
+    "api",
+    "rich harris"
+  ],
+  "background_color": "#f6fafd",
+  "theme_color": "#ff3e00",
+  "start_url": "app.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/msapplication-tile-image.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/mask-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "683x683"
+    }
+  ],
+  "shortcuts": [],
+  "screenshots": []
+}
