@@ -1,0 +1,77 @@
+/*! polaris.css v1.0 | MIT License | github.com/2gbeh/polaris.css */
+
+.tw-alert {
+    max-width: 380px;
+    min-width: 380px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+
+    &-content {
+        background-color: $cyan;
+        border-bottom: 5px solid $lyan;
+        color: #fff;
+        padding: 10px 20px;
+
+        .fas {
+            font-size: 28px;
+        }
+
+        .font-bold {
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .text-sm {
+            font-size: 13px;
+            letter-spacing: .5px;
+            margin: 2px 0;
+        }
+
+        input {
+            background-color: transparent;
+            border: none;
+            float: right;
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 0.6;
+            margin: 5px 0 0 0;
+
+            &:hover {
+                cursor: pointer;
+                font-weight: normal;
+            }
+        }
+    }
+
+    &-attention {
+        background-color: $attention;
+        border-color: $attention_;
+    }
+
+    &-success {
+        background-color: $success;
+        border-color: $success_;
+    }
+
+    &-warning {
+        background-color: $warning;
+        border-color: $warning_;
+    }
+
+    &-danger {
+        background-color: $danger;
+        border-color: $danger_;
+    }
+
+    /* ****************************************************** */
+
+    @media only screen and (max-width: 640px) {
+        max-width: 100%;
+        min-width: 100%;
+        right: auto;
+    }
+
+
+}

@@ -1,0 +1,125 @@
+/* CSS Document */
+
+.welcome {
+  font-family: 'Nunito', sans-serif;
+
+
+  .logo {
+    color: $blue;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .fi {
+    color: $gold;
+    font-size: 24px;
+    position: relative;
+    top: 3px;
+  }
+
+  .h2 {
+    color: $blue;
+    position: relative;
+
+    &::after {
+      bottom: -3px;
+      content: "";
+      height: 2px;
+      left: 0;
+      position: absolute;
+      transition: .2s;
+      width: 0;
+    }
+
+    &:hover::after {
+      background-color: $blue;
+      background-color: $gold;
+      width: 100%;
+    }
+
+    &-muted {
+      color: #777;
+      cursor: not-allowed;
+      text-decoration: none;
+
+      &:hover::after {
+        width: 0;
+      }
+    }
+  }
+
+  .badge {
+    background-color: tomato;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 2px;
+    padding: 2px 6px;
+  }
+
+  .beta {
+    color: $cyan;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .article {
+    line-height: 24px;
+  }
+
+  .address {
+    font-size: 16px;
+    white-space: nowrap;
+
+    var {
+      color: $pyan;
+      display: inline-block;
+      margin: 0 8px 0 10px;
+    }
+
+    strong {
+      color: $pear;
+      margin-left: 5px;
+    }
+
+    sup {
+      margin-left: 5px;
+    }
+  }
+
+  .social {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+    white-space: nowrap;
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+
+      a:hover {
+        color: $gold;
+      }
+
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+  /* ****************************************************** */
+
+  @media only screen and (max-width: 640px) {
+    .copy {
+      margin: 15px 0;
+    }
+
+    .social {
+      display: none;
+    }
+  }
+}

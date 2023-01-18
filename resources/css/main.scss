@@ -1,0 +1,32 @@
+/* _colors.scss */
+
+$lyan: #75C5F0;
+$cyan: #0093DD;
+$dyan: #007BB8;
+$pyan: #D81B60;
+$gyan: #16BC00;
+
+$gold: #dca825;
+$blue: #233066;
+$blue_hover: #131e49;
+$blue_focus: #0a2049;
+$black: #2d2d2d;
+$pear: #82c341;
+
+$attention: #0086d6;
+$success: #43d787;
+$warning: #ffbb00;
+$danger: #f9461c;
+
+$attention_: #80c2ea;
+$success_: #a1ebc3;
+$warning_: #ffdd80;
+$danger_: #fca28d;
+
+@import "404";
+@import "guest";
+@import "host";
+@import "tailwind-alert";
+@import "welcome";
+@import "search";
+@import "chatbot";
