@@ -1,4 +1,4 @@
-# biu-portal
+# BIU Portal
 
 Admission Portal - Benson Idahosa University
 
