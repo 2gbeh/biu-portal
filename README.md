@@ -1,6 +1,6 @@
 # BIU Portal
 
-Admission Portal - Benson Idahosa University
+Student Admission Portal - Benson Idahosa University
 
 [![Laravel](https://img.shields.io/badge/Laravel-8.x-ff2d20.svg)](https://laravel.com/docs/8.x)
 [![PHP](https://img.shields.io/badge/PHP-7.x-777bb3.svg)](https://www.w3schools.com/php/default.asp)
