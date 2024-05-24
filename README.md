@@ -26,4 +26,4 @@ $ php artisan serve
 
 ![Screenshot](./public/social-preview-lg.png)
 
-[Download UI Template](https://drive.google.com/file/d/1Mmc4b5ikSZzP_QVLVct2gB6uTgqc9AtW/view) 
+<!-- [Download UI Template](https://drive.google.com/file/d/1Mmc4b5ikSZzP_QVLVct2gB6uTgqc9AtW/view) -->
